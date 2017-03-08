@@ -1,0 +1,13 @@
+@import 'setup';
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    color: goldenrod;
+}
