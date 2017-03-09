@@ -38,3 +38,5 @@ gulp.task('watch', () => {
 });
 
 gulp.task('default', ['browser-sync', 'styles', 'javascript', 'watch']);
+
+gulp.task('build', ['styles', 'javascript']);
