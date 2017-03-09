@@ -1,13 +1,74 @@
 @import 'setup';
 
+
+$backgroundColor: blue;
+$backgroundColorLighter: lighten($backgroundColor, 10);
+$primaryColor: limegreen;
+
+
+
+// $backgroundColor: brown;
+// $backgroundColorLighter: lighten($backgroundColor, 10);
+// $primaryColor: goldenrod;
+
+
+
+
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
-.container {
+body {
+    background: url('http://unsplash.it/2000/1200') $backgroundColor;
+}
+
+body:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -10;
+    display: block;
+    background: $backgroundColor;
+    opacity: 0.3;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+header, section {
+    background: $backgroundColorLighter;
+    padding: 1rem 2rem;
+    margin: 2rem;
+    border-radius: 2px;
+}
+
+.wrapper {
     max-width: 900px;
     margin: 0 auto;
-    color: goldenrod;
+    color: $primaryColor;
+}
+
+.wrapper h1, .wrapper h2  {
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery .box {
+    min-height: 100px;
+    min-width: 100px;
+    background: $primaryColor;
+    padding: 1rem;
+    border-radius: 2px;
 }
