@@ -1,12 +1,12 @@
 @import 'setup';
 
-// $backgroundColor: brown;
-// $backgroundColorLighter: lighten($backgroundColor, 10);
-// $primaryColor: goldenrod;
-
-$backgroundColor: cadetblue;
+$backgroundColor: brown;
 $backgroundColorLighter: lighten($backgroundColor, 10);
-$primaryColor: white;
+$primaryColor: goldenrod;
+
+// $backgroundColor: cadetblue;
+// $backgroundColorLighter: lighten($backgroundColor, 10);
+// $primaryColor: white;
 
 html, body {
     height: 100%;
