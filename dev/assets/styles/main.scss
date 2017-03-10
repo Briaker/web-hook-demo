@@ -1,18 +1,12 @@
 @import 'setup';
 
-
 $backgroundColor: blue;
 $backgroundColorLighter: lighten($backgroundColor, 10);
 $primaryColor: limegreen;
 
-
-
 // $backgroundColor: brown;
 // $backgroundColorLighter: lighten($backgroundColor, 10);
 // $primaryColor: goldenrod;
-
-
-
 
 html, body {
     height: 100%;
@@ -43,6 +37,7 @@ main {
     align-items: center;
     height: 100%;
 }
+
 header, section {
     background: $backgroundColorLighter;
     padding: 1rem 2rem;
